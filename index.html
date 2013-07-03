@@ -1,42 +1,60 @@
 <!DOCTYPE html>
 <head>
-	<script type='text/javascript' src='http://yui.yahooapis.com/3.6.0/build/yui/yui.js'></script>
-	<script type="text/javascript" src="./displayShapes.js"></script>
-	<link href='http://fonts.googleapis.com/css?family=Maven+Pro:400,700' rel='stylesheet' type='text/css'>
-	<link rel="stylesheet" type="text/css" href="./displayShapes.css"></link>
-	<style type="text/css">
-	 html, body {
-	 margin: 0px;
-	 padding: 0px;
-	 border: 0px;
-	 height:100%;
-	 }
-	 </style>
+<script type='text/javascript' src='http://yui.yahooapis.com/3.6.0/build/yui/yui.js'></script>
+<script type="text/javascript" src="./displayShapes.js"></script>
+<link href='http://fonts.googleapis.com/css?family=Maven+Pro:400,700' rel='stylesheet' type='text/css'>
+<link rel="stylesheet" type="text/css" href="./displayShapes.css"></link>
+<style type="text/css">
+html, body {
+margin: 0px;
+padding: 0px;
+border: 0px;
+height:100%;
+}
+</style>
 </head>
 <body>
 <div id="mygraphiccontainer">
     <div id="menu-container">
-    	<div style="margin-top:50%;">
-		  	<div class="nav-elements"> <a>Today</a> </div>
-		  	<div class="nav-elements"><a>This Week</a></div>
-		   	<div class="nav-elements"><a>This Month</a></div>
-		   	<div class="nav-elements" style="background:none;border:none;"><input type="text" style="width:80%;"></div>
-		   	<div class="nav-elements">Search</div>
-	  
-		</div>
+     <div style="margin-top:50%;">
+     	<div  id="nav-menu">
+     	<ul style="margin 0; padding:0;">
+     		<li  class="nav-menu-items" style="list-style:none;"> <a> Today </a> </li>
+     		<li  class="nav-menu-items" style="list-style:none;">  <a>This Week</a> </li>
+     		<li  class="nav-menu-items" style="list-style:none;">  <a>This Month</a> </li>
+     		<li  class="nav-menu-items" style="list-style:none;background:none;border:none;"> <input type="text" style="width:80%;"> </li>
+     		<li  class="nav-menu-items" style="list-style:none;">  <a>Search</a> </li>
+
+     	</ul>
+     </div>
+
+
+</div>
     </div>
 
     <div id="content-container">
-    	<div id="current-post">
-    	</div>
+     <div id="current-post">
+     </div>
     </div>
 
     <div id="post-container">
-    	<div id="list-container">
-    		<div class="post-list">
-    			Login
-    		</div>
-        </div>
+	     <div id="list-container">
+		     <div class="login-container" >
+			      <form style="display:block;">
+			      	<div style="display:inline;"> <span> Username</span>  <input type="text" style="width:20%;" /> </div> 
+			      	<div style="display:inline;"><span> Password</span> <input type="password" style="width:20%;" /></div>
+			      	<div class="login-button" > <a id="login"> Login </a> </div>
+			      </form>
+			      <div style="display:none;">
+			     	 <div id="welcome-div" style="display:inline;"> Welcome *******</div> 
+			     	 
+			     	 <div class="login-button" > 
+			      		<a id="logout"> Logout </a> 
+			      	 </div>
+			      </div>
+		     
+		     </div>
+	     </div>
     </div>
     
 </div>
