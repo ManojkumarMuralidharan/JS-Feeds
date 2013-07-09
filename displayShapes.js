@@ -159,7 +159,7 @@ document.getElementById("current-post").innerHTML=value;
             return function(e){
                 document.getElementById("current-post").innerHTML=value.innerHTML;
                 //value.style.borderBottom='5px solid #3366cc;';
-                if(!value.style.borderLeft){
+                if(!value.style.borderLeft||value.style.borderLeft=='medium none'){
                     value.style.borderLeft='6px solid #02A3C6';
                     //console.log(value.style.background);
                     value.style.background='#EEEEEE';
@@ -174,7 +174,25 @@ document.getElementById("current-post").innerHTML=value;
         
        };
        listItem.onclick=populateContentContainer(listItem);
+
+
+
+
     }
+
+
+    document.getElementById('loginContainer').onclick=function helper(value){
+        return function(){
+            if(value.style.height!='20%'){
+                value.style.height='20%';
+            }else{
+                value.style.height='9%';
+            }
+            
+        };
+    }(document.getElementById('loginContainer'));
+
+
 
 //posts.populate(post_list)
 
