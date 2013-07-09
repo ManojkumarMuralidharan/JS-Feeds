@@ -39,19 +39,35 @@ height:100%;
 
     <div id="post-container">
 	     <div id="list-container">
-		     <div class="login-container" >
-			      <form style="display:block;">
+		     <div id="loginContainer" class="login-container" >
+                <div>
+			      <form style="display:none;">
 			      	<div style="display:inline;"> <span> Username</span>  <input type="text" style="width:20%;" /> </div> 
 			      	<div style="display:inline;"><span> Password</span> <input type="password" style="width:20%;" /></div>
-			      	<div class="login-button" > <a id="login"> Login </a> </div>
+			      	<div class="login-button"  style="float:right;"> <a id="login"> Login </a> </div>
 			      </form>
-			      <div style="display:none;">
+                </div>
+
+                <div style="display:none;"> 
+                    <span style="float:left;"><a href="">Forgot Password</a></span> <span style="float:right;"><a href="">Register</a></span>
+                </div>
+
+                <div>
+                  <form style="display:block;">
+                    <div style="display: inline-block;width:80%"> <span> Username</span>  <input type="text" style="float:right;" value="Enter username" /> </div> 
+                    <div style="display: inline-block;width:80%"><span > Password</span> <input type="password" style="float:right;" /></div>
+                    <div style="display: inline-block;width:80%"><span style="float:left;"> Re-Type Password</span> <input type="password" style="float:right;" /></div>
+                    <div class="login-button" style="display: block;"> <a id="Register"> Register </a> </div>
+                  </form>
+                </div>
+
+			    <div style="display:none;">
 			     	 <div id="welcome-div" style="display:inline;"> Welcome *******</div> 
 			     	 
 			     	 <div class="login-button" > 
 			      		<a id="logout"> Logout </a> 
 			      	 </div>
-			      </div>
+			    </div>
 		     
 		     </div>
 	     </div>
